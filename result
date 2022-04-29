@@ -1,0 +1,120 @@
+================ p=0.0, max_fea=10 ========================
+TF-IDF + LinearSVC : 0.6567
+TF-IDF + DecisionTree : 0.7105
+TF-IDF + AdaBoost : 0.7125
+TF-IDF + VotingHard : 0.7130
+============================ END =================================
+================ p=0.0, max_fea=100 ========================
+TF-IDF + LinearSVC : 0.8378
+TF-IDF + DecisionTree : 0.8446
+TF-IDF + AdaBoost : 0.8449
+TF-IDF + VotingHard : 0.8513
+============================ END =================================
+================ p=0.0, max_fea=500 ========================
+TF-IDF + LinearSVC : 0.9126
+TF-IDF + DecisionTree : 0.8971
+TF-IDF + AdaBoost : 0.9027
+TF-IDF + VotingHard : 0.9144
+============================ END =================================
+================ p=0.0, max_fea=1000 ========================
+TF-IDF + LinearSVC : 0.9246
+TF-IDF + DecisionTree : 0.9075
+TF-IDF + AdaBoost : 0.9103
+TF-IDF + VotingHard : 0.9257
+============================ END =================================
+================ p=0.0, max_fea=None ========================
+TF-IDF + LinearSVC : 0.9435
+TF-IDF + DecisionTree : 0.9287
+TF-IDF + AdaBoost : 0.9070
+TF-IDF + VotingHard : 0.9408
+============================ END =================================
+================ p=0.3, max_fea=10 ========================
+TF-IDF + LinearSVC : 0.6567
+TF-IDF + DecisionTree : 0.7105
+TF-IDF + AdaBoost : 0.7125
+TF-IDF + VotingHard : 0.7130
+============================ END =================================
+================ p=0.3, max_fea=100 ========================
+TF-IDF + LinearSVC : 0.8378
+TF-IDF + DecisionTree : 0.8452
+TF-IDF + AdaBoost : 0.8448
+TF-IDF + VotingHard : 0.8512
+============================ END =================================
+================ p=0.3, max_fea=500 ========================
+TF-IDF + LinearSVC : 0.9105
+TF-IDF + DecisionTree : 0.8964
+TF-IDF + AdaBoost : 0.8994
+TF-IDF + VotingHard : 0.9121
+============================ END =================================
+================ p=0.3, max_fea=1000 ========================
+TF-IDF + LinearSVC : 0.9190
+TF-IDF + DecisionTree : 0.9018
+TF-IDF + AdaBoost : 0.9040
+TF-IDF + VotingHard : 0.9190
+============================ END =================================
+================ p=0.3, max_fea=None ========================
+TF-IDF + LinearSVC : 0.9345
+TF-IDF + DecisionTree : 0.9123
+TF-IDF + AdaBoost : 0.8924
+TF-IDF + VotingHard : 0.9291
+============================ END =================================
+================ p=0.5, max_fea=10 ========================
+TF-IDF + LinearSVC : 0.6422
+TF-IDF + DecisionTree : 0.7024
+TF-IDF + AdaBoost : 0.7055
+TF-IDF + VotingHard : 0.7052
+============================ END =================================
+================ p=0.5, max_fea=100 ========================
+TF-IDF + LinearSVC : 0.8094
+TF-IDF + DecisionTree : 0.8035
+TF-IDF + AdaBoost : 0.8077
+TF-IDF + VotingHard : 0.8156
+============================ END =================================
+================ p=0.5, max_fea=500 ========================
+TF-IDF + LinearSVC : 0.8725
+TF-IDF + DecisionTree : 0.8501
+TF-IDF + AdaBoost : 0.8452
+TF-IDF + VotingHard : 0.8696
+============================ END =================================
+================ p=0.5, max_fea=1000 ========================
+TF-IDF + LinearSVC : 0.8759
+TF-IDF + DecisionTree : 0.8414
+TF-IDF + AdaBoost : 0.8336
+TF-IDF + VotingHard : 0.8724
+============================ END =================================
+================ p=0.5, max_fea=None ========================
+TF-IDF + LinearSVC : 0.8908
+TF-IDF + DecisionTree : 0.8383
+TF-IDF + AdaBoost : 0.8151
+TF-IDF + VotingHard : 0.8741
+============================ END =================================
+================ p=1.0, max_fea=10 ========================
+TF-IDF + LinearSVC : 0.5969
+TF-IDF + DecisionTree : 0.6607
+TF-IDF + AdaBoost : 0.6597
+TF-IDF + VotingHard : 0.6609
+============================ END =================================
+================ p=1.0, max_fea=100 ========================
+TF-IDF + LinearSVC : 0.7760
+TF-IDF + DecisionTree : 0.7694
+TF-IDF + AdaBoost : 0.7523
+TF-IDF + VotingHard : 0.7817
+============================ END =================================
+================ p=1.0, max_fea=500 ========================
+TF-IDF + LinearSVC : 0.8188
+TF-IDF + DecisionTree : 0.7925
+TF-IDF + AdaBoost : 0.7575
+TF-IDF + VotingHard : 0.8166
+============================ END =================================
+================ p=1.0, max_fea=1000 ========================
+TF-IDF + LinearSVC : 0.8223
+TF-IDF + DecisionTree : 0.7854
+TF-IDF + AdaBoost : 0.7186
+TF-IDF + VotingHard : 0.8161
+============================ END =================================
+================ p=1.0, max_fea=None ========================
+TF-IDF + LinearSVC : 0.8372
+TF-IDF + DecisionTree : 0.7626
+TF-IDF + AdaBoost : 0.7479
+TF-IDF + VotingHard : 0.8188
+============================ END =================================
