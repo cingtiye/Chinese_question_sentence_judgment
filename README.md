@@ -70,7 +70,7 @@ p = 1.0
 
 1、标点符号是很重要的特征，比如以`max_features=500` LinearSVC模型举例：可以看到，随着p值的增加，F1值下降很明显！
 
-<img src="E:\BaiduNetdiskDownload\Photo2MD\image-20220429185710594.png" alt="image-20220429185710594" style="zoom:74%;" />
+<img src="./fig/1" alt="image-20220429185710594" style="zoom:74%;" />
 
 2、在`max_features<=500`时，Ensemble的效果是最好的，并且明显好于LinearSVC
 
@@ -78,7 +78,7 @@ p = 1.0
 
 4、综合2和3可以看出，LinearSVC受`max_features<=500`的影响较大，比如以p=0.3举例，分别画出LinearSVC和Ensemble的F1值就可以很清楚看出
 
-<img src="E:\BaiduNetdiskDownload\Photo2MD\image-20220429185851247.png" alt="image-20220429185851247" style="zoom:80%;" />
+<img src="./fig/2" alt="image-20220429185851247" style="zoom:80%;" />
 
 ### TODO
 
