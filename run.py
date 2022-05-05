@@ -17,7 +17,7 @@ from sklearn.metrics import f1_score
 def txt2data(file_name, participle=True):
     """从 all_data.txt 读取数据
     Args:
-        file_name (str): all_data.txt 文件地址
+        file_name (str): all_data.txt 文件地址,标签为0表示非疑问句，标签为1表示问句
         participle (bool): 是否分词
     Return:
         X, y
@@ -65,23 +65,23 @@ def get_features(max_features):
 
 
 def run_model(x_train, x_val, y_train, y_val):
-    clf1 = LinearSVC()
-    clf1.fit(x_train, y_train)
-    val_pre = clf1.predict(x_val)
-    f1 = f1_score(y_val, val_pre, average='macro')
-    print('TF-IDF + LinearSVC : %.4f' % f1)
-
-    clf2 = DecisionTreeClassifier()
-    clf2.fit(x_train, y_train)
-    val_pre = clf2.predict(x_val)
-    f1 = f1_score(y_val, val_pre, average='macro')
-    print('TF-IDF + DecisionTree : %.4f' % f1)
-
-    clf3 = AdaBoostClassifier(random_state=2022)
-    clf3.fit(x_train, y_train)
-    val_pre = clf3.predict(x_val)
-    f1 = f1_score(y_val, val_pre, average='macro')
-    print('TF-IDF + AdaBoost : %.4f' % f1)
+    # clf1 = LinearSVC()
+    # clf1.fit(x_train, y_train)
+    # val_pre = clf1.predict(x_val)
+    # f1 = f1_score(y_val, val_pre, average='macro')
+    # print('TF-IDF + LinearSVC : %.4f' % f1)
+    #
+    # clf2 = DecisionTreeClassifier()
+    # clf2.fit(x_train, y_train)
+    # val_pre = clf2.predict(x_val)
+    # f1 = f1_score(y_val, val_pre, average='macro')
+    # print('TF-IDF + DecisionTree : %.4f' % f1)
+    #
+    # clf3 = AdaBoostClassifier(random_state=2022)
+    # clf3.fit(x_train, y_train)
+    # val_pre = clf3.predict(x_val)
+    # f1 = f1_score(y_val, val_pre, average='macro')
+    # print('TF-IDF + AdaBoost : %.4f' % f1)
 
     # clf4 = VotingClassifier(estimators=[('svc', clf1), ('tree', clf2), ('ada', clf3)],
     #                         voting='soft', weights=[1, 1, 1])
@@ -90,6 +90,9 @@ def run_model(x_train, x_val, y_train, y_val):
     # f1 = f1_score(y_val, val_pre, average='macro')
     # print('TF-IDF + VotingSoft : %.4f' % f1)
 
+    clf1 = LinearSVC()
+    clf2 = DecisionTreeClassifier()
+    clf3 = AdaBoostClassifier(random_state=2022)
     clf5 = VotingClassifier(estimators=[('svc', clf1), ('tree', clf2), ('ada', clf3)])
     clf5.fit(x_train, y_train)
     val_pre = clf5.predict(x_val)
