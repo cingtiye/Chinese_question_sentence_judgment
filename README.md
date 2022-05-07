@@ -80,9 +80,42 @@ p = 1.0
 
 <img src="./fig/2" alt="image-20220429185851247" style="zoom:80%;" />
 
+**2022.05.06 加入FastText**，该Git在原始数据集（all_data.txt）中跑的程序，FastText程序参考[该Git](https://github.com/649453932/Chinese-Text-Classification-Pytorch)
+
+FastText训练和测试时，取**p=0.5**，在FastText/data/text.txt上测试的**F1值为0.9624**，显著好于机器学习的模型
+
+但是模型的泛化性不强。
+
+运行FastText
+
+```shell
+cd FastText
+python run.py --model FastText --embedding random
+```
+
+测试FastText
+
+```shell
+cd FastText
+python evalute.py
+```
+
+运行完之后可以手动测试下面的例子，如果只用Git提供的数据集，模型不能全部判断正确，但是当扩增数据集时，重新训练FastText，模型在下面的例子中可以全部判断正确。**因此，要想提高模型的泛化性，需要在该Git的基础上扩增数据集**
+
+```
+"明天明天咋样",
+"明天早起不",
+"我没有钱",
+"我没有钱，你有？",
+"你叫什么名字",
+"你多大了？",
+"你几岁了",
+"你平时喜欢干什么？",
+```
+
 ### TODO
 
 - [ ] 自动调参
 - [ ] 加入需要结合上下文才可以判定的困难样本
 - [ ] 引入词向量
-- [ ] 加入深度学习
+- [x] 加入深度学习
